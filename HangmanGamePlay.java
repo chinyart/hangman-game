@@ -2,7 +2,7 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.*;
 
-public class HangmanGame extends JFrame {
+public class HangmanGamePlay extends JFrame {
     private static final String[] WORDS = {"hello", "world", "hangman", "java", "programming"};
     private static final int MAX_TRIES = 10;
 
@@ -21,7 +21,7 @@ public class HangmanGame extends JFrame {
     private int incorrectGuesses;
     private boolean gameOver;
 
-    public HangmanGame() {
+    public HangmanGamePlay() {
         wordToGuess = WORDS[(int) (Math.random() * WORDS.length)];
         guessedWord = new StringBuilder("-".repeat(wordToGuess.length()));
         triesLeft = MAX_TRIES;
@@ -164,7 +164,7 @@ public class HangmanGame extends JFrame {
     public static void main(String[] args) {
         SwingUtilities.invokeLater(new Runnable() {
             public void run() {
-                new HangmanGame();
+                new HangmanGamePlay();
             }
         });
     }

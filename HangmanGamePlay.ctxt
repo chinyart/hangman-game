@@ -1,7 +1,7 @@
 #BlueJ class context
-comment0.target=HangmanGame
+comment0.target=HangmanGamePlay
 comment1.params=
-comment1.target=HangmanGame()
+comment1.target=HangmanGamePlay()
 comment2.params=e
 comment2.target=void\ actionPerformed(java.awt.event.ActionEvent)
 comment3.params=g
